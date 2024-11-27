@@ -1,0 +1,36 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-left: 1rem;
+}
+
+/* For mobile devices: */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Collapse the sidebar on small screens */
+  .sidebar {
+    position: absolute;
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}
