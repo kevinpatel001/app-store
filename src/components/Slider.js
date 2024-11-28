@@ -38,24 +38,24 @@ export default function Slider() {
           {Array.from({ length: 15 }).map((_, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[500px] h-[280px] bg-white shadow-lg rounded-lg"
+              className="flex-shrink-0 w-full sm:w-[500px] h-[280px] bg-white shadow-lg rounded-lg"
             >
               <div className="relative w-full h-40">
                 <Image
                   src="/monkey-demon-banner.jpg" // Replace with your image path
                   alt={`Card ${index + 1}`}
                   fill
-                  className="object-cover  rounded-t-lg"
+                  className="object-cover rounded-t-lg"
                 />
               </div>
               <div className="p-4">
-                <h2 className="text-lg font-bold text-gray-800">
+                <h2 className="text-base sm:text-lg font-bold text-gray-800">
                   Black Legend: Monkey Demon
                 </h2>
-                <p className="text-gray-600 text-sm mt-1">
+                <p className="text-gray-600 text-xs sm:text-sm mt-1">
                   Journey to the West
                 </p>
-                <button className="mt-1 bg-orange-500 text-white w-full py-2 rounded-md font-medium hover:bg-orange-600">
+                <button className="mt-1 bg-orange-500 text-white w-full py-2 rounded-md font-medium hover:bg-orange-600 text-sm sm:text-base">
                   DOWNLOAD
                 </button>
               </div>

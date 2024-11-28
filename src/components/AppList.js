@@ -6,14 +6,7 @@ const apps = [
     category: "Casual",
     rating: "3.6",
     link: "/winzo",
-    image: "https://via.placeholder.com/150", // Replace with the actual image URL
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
+    image: "https://via.placeholder.com/150",
   },
   {
     name: "Free Fire MAX",
@@ -21,13 +14,6 @@ const apps = [
     rating: "4.2",
     link: "/free-fire-max",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Ludo King®",
@@ -35,13 +21,6 @@ const apps = [
     rating: "4.1",
     link: "/ludo-king",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Zupee: Ludo apps Online",
@@ -49,13 +28,6 @@ const apps = [
     rating: "4.1",
     link: "/zupee",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Traffic Bike Rush Driving City",
@@ -63,13 +35,6 @@ const apps = [
     rating: "4.0",
     link: "/traffic-bike",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Rush - Play Ludo app Online",
@@ -77,13 +42,6 @@ const apps = [
     rating: "4.3",
     link: "/rush-ludo",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Indian Bikes Driving 3D",
@@ -91,13 +49,6 @@ const apps = [
     rating: "4.2",
     link: "/indian-bikes",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Car Race 3D: Car Racing",
@@ -105,13 +56,6 @@ const apps = [
     rating: "4.1",
     link: "/car-race-3d",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
   },
   {
     name: "Real Moto Driving Racing World",
@@ -119,42 +63,37 @@ const apps = [
     rating: "4.5",
     link: "/real-moto",
     image: "https://via.placeholder.com/150",
-    appDescription: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    `,
-    icon: "/icon/icon.png",
-    version: "1.0",
-    screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
-    applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
-  }
+  },
 ];
-
 
 export default function AppList() {
   return (
-    <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
         {apps.map((app, index) => (
-          <Link key={index} href={{
-            pathname: '/AppDetails',
-        query: { data: encodeURIComponent(JSON.stringify(app)) },
-          }}
-              className="group flex flex-col items-center bg-white rounded-lg shadow-lg p-4 hover:bg-blue-50 transition-all duration-300"
-              title={app.name}
-            >
-              <img
-                src={app.image}
-                alt={app.name}
-                className="w-20 h-20 object-cover rounded-md mb-4"
-              />
-              <h3 className="text-lg font-medium text-gray-800 group-hover:text-blue-500">
-                {app.name}
-              </h3>
-              <p className="text-sm text-gray-500">{app.category}</p>
-              <span className="text-sm font-bold text-yellow-500">
-                {app.rating} ★
-              </span>
-            
+          <Link
+            key={index}
+            href={{
+              pathname: "/AppDetails",
+              query: { data: encodeURIComponent(JSON.stringify(app)) },
+            }}
+            className="group flex flex-col items-center bg-white rounded-lg shadow-lg p-4 sm:p-5 md:p-6 hover:bg-blue-50 transition-all duration-300"
+            title={app.name}
+          >
+            <img
+              src={app.image}
+              alt={app.name}
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-cover rounded-md mb-3 sm:mb-4"
+            />
+            <h3 className="text-sm sm:text-base md:text-lg font-medium text-gray-800 group-hover:text-blue-500 text-center">
+              {app.name}
+            </h3>
+            <p className="text-xs sm:text-sm md:text-base text-gray-500 text-center">
+              {app.category}
+            </p>
+            <span className="text-xs sm:text-sm md:text-base font-bold text-yellow-500">
+              {app.rating} ★
+            </span>
           </Link>
         ))}
       </div>

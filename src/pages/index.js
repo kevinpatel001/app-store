@@ -1,26 +1,27 @@
+// src/pages/index.js
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import Slider from '../components/Slider'; // Import the Slider component
-import GameList from '../components/AppList'; // Import the GameList component
-// import AppDetails from '@/components/AppDetails';
+import Slider from '../components/Slider';
+import GameList from '../components/AppList';
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col sm:flex-row min-h-screen">
+      {/* Navbar */}
       <Navbar />
+
+      {/* Sidebar */}
       <Sidebar />
-      <main className="ml-64 p-8 bg-gray-50">
-       
+
+      {/* Main Content */}
+      <main className="flex-1 p-4 sm:p-8 bg-gray-50 sm:ml-64">
         <Slider />
 
-        
         <div className="mt-10">
           <h2 className="text-3xl font-bold text-primary mb-4">Popular Apps</h2>
           <GameList />
         </div>
       </main>
-
-      {/* <AppDetails/> */}
     </div>
   );
 }
