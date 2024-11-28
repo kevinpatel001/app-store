@@ -11,15 +11,15 @@ export default function Home() {
       <Navbar />
 
       {/* Sidebar */}
-      <Sidebar className="sm:hidden"/>
+      <Sidebar className="sm:"/>
 
       {/* Main Content */}
-      <main className="flex-1 p-4  bg-gray-50 ">
+      <main className=" ">
         <Slider />
 
-        <div className="mt-10">
+        <div className="">
           <h2 className="text-3xl font-bold text-primary mb-4">Popular Apps</h2>
-          <GameList />
+          <Home />
         </div>
       </main>
     </div>
