@@ -41,7 +41,7 @@ export default function Slider() {
             >
               <div className="relative w-full h-1/2">
                 <Image
-                  src="/monkey-demon-banner.jpg" // Replace with your image path
+                  src="/" // Replace with your image path
                   alt={`Card ${index + 1}`}
                   fill
                   className="object-cover rounded-t-lg"

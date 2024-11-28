@@ -25,7 +25,7 @@ const apps = [
     appDescription: `
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     `,
-    icon: "https://w7.pngwing.com/pngs/23/300/png-transparent-female-game-character-holding-sword-illustration-garena-rov-mobile-moba-garena-free-fire-gunny-league-of-legends-league-of-legends-game-computer-fictional-character.png",
+    icon: "https://w7.pngwing.com/pngs/23/300/png-transparent-female-app-character-holding-sword-illustration-garena-rov-mobile-moba-garena-free-fire-gunny-league-of-legends-league-of-legends-game-computer-fictional-character.png",
     version: "1.0",
     screenshort: ["/image/screenshorts.png", "/image/screenshorts.png", "/image/screenshorts.png"],
     applink: "https://apk-dym.vdmapk.com/data/apkv2/vidmate_v5.2743_20241029102607.apk?pub=com.nemo.vidmate.app.websitevdmofficial",
@@ -137,7 +137,7 @@ export default function TopAppList() {
   return (
     <div className="p-6">
       <div className="text-5xl pt-10 pb-10 text-center">TOP APP</div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
         {apps.map((app, index) => (
           <Link
             key={index}
@@ -145,19 +145,21 @@ export default function TopAppList() {
               pathname: '/AppDetails',
               query: { data: encodeURIComponent(JSON.stringify(app)) },
             }}
-            className="group flex flex-col items-center bg-white rounded-lg shadow-lg p-4 hover:bg-blue-50 transition-all duration-300"
+            className="group flex flex-col items-center bg-white rounded-lg shadow-lg p-4 sm:p-5 md:p-6 hover:bg-blue-50 transition-all duration-300"
             title={app.name}
           >
             <img
               src={app.image}
               alt={app.name}
-              className="w-20 h-20 object-cover rounded-md mb-4"
+              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-cover rounded-md mb-4"
             />
-            <h3 className="text-lg md:text-xl lg:text-2xl font-medium text-gray-800 group-hover:text-blue-500">
+            <h3 className="text-base sm:text-lg lg:text-xl font-medium text-gray-800 group-hover:text-blue-500">
               {app.name}
             </h3>
-            <p className="text-sm md:text-base text-gray-500">{app.category}</p>
-            <span className="text-sm md:text-base font-bold text-yellow-500">
+            <p className="text-xs sm:text-sm lg:text-base text-gray-500">
+              {app.category}
+            </p>
+            <span className="text-xs sm:text-sm lg:text-base font-bold text-yellow-500">
               {app.rating} ★
             </span>
           </Link>

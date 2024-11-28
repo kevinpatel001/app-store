@@ -133,7 +133,7 @@ const games = [
 export default function GameList() {
   return (
     <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
-      <div className="text-3xl sm:text-4xl lg:text-5xl pt-6 sm:pt-8 lg:pt-10 pb-6 sm:pb-8 lg:pb-10 text-center">
+      <div className="text-5xl sm:text-4xl lg:text-5xl pt-6 sm:pt-8 lg:pt-10 pb-6 sm:pb-8 lg:pb-10 text-center">
         GAME LIST
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">

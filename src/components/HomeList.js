@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function Home() {
+export default function HomeList() {
   const sliderRef = useRef(null);
 
   const handleNext = () => {
