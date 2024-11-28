@@ -8,15 +8,15 @@ const AppDetails = () => {
   const decodedObject = data ? JSON.parse(decodeURIComponent(data)) : null;
 
   const {
-    name = decodedObject?.name,
-    appDescription = decodedObject?.appDescription,
-    icon = decodedObject?.icon,
-    version = decodedObject?.version,
-    screenshort = decodedObject?.screenshort,
-    applink = decodedObject?.applink,
+    name = decodedObject?.name ? decodedObject?.name : "No App name",
+    appDescription = decodedObject?.appDescription ? decodedObject?.appDescription : "",
+    icon = decodedObject?.icon ? decodedObject?.icon : "",
+    version = decodedObject?.version ? decodedObject?.version : "0",
+    screenshort = decodedObject?.screenshort ? decodedObject?.screenshort : [],
+    applink = decodedObject?.applink ? decodedObject?.applink : "No app link",
   } = router.query;
 
-  
+
 
   const handleDownload = () => {
     try {
@@ -29,9 +29,9 @@ const AppDetails = () => {
     }
   };
 
-  useEffect(()=>{
-    console.log("decodedObject :",decodedObject)
-  },[])
+  useEffect(() => {
+    console.log("decodedObject :", decodedObject)
+  }, [])
 
   return (
     <div className="bg-gray-100 min-h-screen p-5 flex justify-center items-center">
