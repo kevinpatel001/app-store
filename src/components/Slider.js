@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Slider() {
   const sliderRef = useRef(null);
@@ -24,7 +24,7 @@ export default function Slider() {
 
   return (
     <div
-      className="h-96 mt-40 mb-16 overflow-hidden flex items-center justify-center bg-gray-100"
+      className="h-96 mt-40 mb-16 overflow-hidden flex items-center justify-center "
       onWheel={handleWheel} // Attach the wheel handler
     >
       <div className="relative w-[95%] max-w-[1200px] overflow-hidden">
@@ -40,8 +40,8 @@ export default function Slider() {
               className="flex-shrink-0 w-[90vw] sm:w-[80vw] md:w-[45vw] lg:w-[30vw] xl:w-[25vw] h-[50vh] bg-white shadow-lg rounded-lg"
             >
               <div className="relative w-full h-1/2">
-                <Image
-                  src="/" // Replace with your image path
+                <img
+                  src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" // Replace with your image path
                   alt={`Card ${index + 1}`}
                   fill
                   className="object-cover rounded-t-lg"
