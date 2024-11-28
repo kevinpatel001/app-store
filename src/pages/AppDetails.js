@@ -5,33 +5,43 @@ const AppDetails = () => {
   const router = useRouter();
   const { data } = router.query;
 
-  const decodedObject = data ? JSON.parse(decodeURIComponent(data)) : null;
+  // Safely decode and parse the data
+  const decodedObject = data
+    ? (() => {
+        try {
+          return JSON.parse(decodeURIComponent(data));
+        } catch (e) {
+          console.error("Error decoding data:", e);
+          return null;
+        }
+      })()
+    : null;
 
+  // Destructure safely with fallbacks
   const {
-    name = decodedObject?.name,
-    appDescription = decodedObject?.appDescription,
-    icon = decodedObject?.icon,
-    version = decodedObject?.version,
-    screenshort = decodedObject?.screenshort,
-    applink = decodedObject?.applink,
-  } = router.query;
+    name = decodedObject?.name || "Unknown App",
+    appDescription = decodedObject?.appDescription || "No description available.",
+    icon = decodedObject?.icon || "/placeholder-icon.png",
+    version = decodedObject?.version || "1.0",
+    screenshort = decodedObject?.screenshort || [],
+    applink = decodedObject?.applink || "#",
+  } = decodedObject || {};
 
-  
-
+  // Handle download functionality
   const handleDownload = () => {
     try {
       const link = document.createElement("a");
-      link.href = applink; // Replace with your file URL
-      link.download = name; // Specify the file name for download
+      link.href = applink;
+      link.download = name;
       link.click();
     } catch (e) {
-      console.log("Error ", e);
+      console.error("Error during download:", e);
     }
   };
 
-  useEffect(()=>{
-    console.log("decodedObject :",decodedObject)
-  },[])
+  useEffect(() => {
+    console.log("Decoded Object:", decodedObject);
+  }, [decodedObject]);
 
   return (
     <div className="bg-gray-100 min-h-screen p-5 flex justify-center items-center">
@@ -48,7 +58,7 @@ const AppDetails = () => {
           <div className="sm:ml-6 mt-4 sm:mt-0 text-center sm:text-left">
             <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-800">{name}</h1>
             <p className="text-gray-600 pt-3 text-sm">App Dev</p>
-            <p className="text-gray-600 pt-3 text-sm">Version : {version}</p>
+            <p className="text-gray-600 pt-3 text-sm">Version: {version}</p>
             <div className="text-gray-500 text-sm space-y-1">
               <p>Rated for only 18+</p>
             </div>
@@ -70,16 +80,24 @@ const AppDetails = () => {
 
         {/* Gallery Section */}
         <section>
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 text-center mb-4">Screenshots</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 text-center mb-4">
+            Screenshots
+          </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {screenshort.map((data, index) => (
-              <img
-                key={index}
-                src={data}
-                alt={`Screenshot ${index + 1}`}
-                className="w-full h-32 sm:h-48 rounded-xl object-cover shadow-md transition duration-300 hover:scale-105"
-              />
-            ))}
+            {Array.isArray(screenshort) && screenshort.length > 0 ? (
+              screenshort.map((data, index) => (
+                <img
+                  key={index}
+                  src={data}
+                  alt={`Screenshot ${index + 1}`}
+                  className="w-full h-32 sm:h-48 rounded-xl object-cover shadow-md transition duration-300 hover:scale-105"
+                />
+              ))
+            ) : (
+              <p className="text-gray-500 text-center col-span-2 sm:col-span-3">
+                No screenshots available.
+              </p>
+            )}
           </div>
         </section>
 
