@@ -24,7 +24,7 @@ export default function Slider() {
 
   return (
     <div
-      className="h-96 mt-52 flex items-center justify-center bg-gray-100"
+      className="h-96 mt-40 mb-16 overflow-hidden flex items-center justify-center bg-gray-100"
       onWheel={handleWheel} // Attach the wheel handler
     >
       <div className="relative w-[95%] max-w-[1200px] overflow-hidden">

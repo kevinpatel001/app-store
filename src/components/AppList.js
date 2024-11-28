@@ -68,7 +68,7 @@ const apps = [
 
 export default function AppList() {
   return (
-    <div className="p-4 sm:p-6 lg:p-8">
+    <div className="p-4  pt-16 sm:p-6 lg:p-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
         {apps.map((app, index) => (
           <Link
