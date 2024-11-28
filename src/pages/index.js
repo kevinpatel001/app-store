@@ -11,10 +11,10 @@ export default function Home() {
       <Navbar />
 
       {/* Sidebar */}
-      <Sidebar />
+      <Sidebar className="sm:hidden"/>
 
       {/* Main Content */}
-      <main className="flex-1 p-4 sm:p-8 bg-gray-50 sm:ml-64">
+      <main className="flex-1 p-4  bg-gray-50 ">
         <Slider />
 
         <div className="mt-10">

@@ -10,10 +10,10 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
       {/* Hamburger Menu Button */}
       <button
-        className="sm:hidden fixed top-4 left-4 z-50 bg-gray-800 text-white p-2 rounded-md"
+        className="sm:hidden mt-20 fixed top-4 left-4 z-50 bg-gray-800 text-white p-2 rounded-md"
         onClick={toggleSidebar}
       >
         {isOpen ? "Close" : "Menu"}
