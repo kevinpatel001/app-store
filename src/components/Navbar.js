@@ -8,7 +8,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary p-3 sm:p-5 shadow-lg fixed w-full z-50">
+    <nav className="bg-green-400 p-3 sm:p-5 shadow-lg fixed w-full z-50">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <h1 className="text-white text-4xl sm:text-3xl pl-28 pb-8 sm:pb-0 sm:pl-0 font-bold">AppStore</h1>
 
